@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 const leadRoutes = require("./routes/LeadRoutes.js");
-app.use("/api/projectwork", leadRoutes);
+app.use("/api/leadmgnt", leadRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
